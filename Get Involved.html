@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloodLink - Get Involve</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <!-- Font Awesome and Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        /* Navbar Styles */
+        body {
+            background-color: #f8f9fa;
+            font-family: "Roboto", "Open Sans", "Arial", sans-serif;
+            
+        }/* Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.navbar .navbar-brand {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-brand:hover {
+    color: #E63946;
+}
+
+.navbar .nav-link {
+    color: black;
+    font-size: 16px;
+    margin-left: 25px;
+    padding: 10px 15px;
+    transition: background-color 0.4s ease, color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: white;
+    background-color: #0080A8;
+    border-radius: 10px;
+}
+
+.nav-link i {
+    margin-right: 4px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: #F1FAEE;
+}
+
+/* Footer */
+footer {
+    background-color: #1D3557;
+    color: #F1FAEE;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+footer a {
+    color: #F1FAEE;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #E63946;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-logo {
+    width: 120px;
+    height: auto;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.footer-social a:hover {
+    color: #E63946;
+}
+
+.hr-footer {
+    border: 1px solid #F1FAEE;
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+.main-div {
+            background: linear-gradient(135deg, #f06543, #f29e4c);
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+        .main-div h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .main-div p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #333;
+        }
+        .section .card {
+            transition: transform 0.3s;
+        }
+        .section .card:hover {
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo-blood-removebg-preview.webp" alt="BloodLink Logo" class="footer-logo rounded-circle"> BloodLink
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-Us.html"><i class="fas fa-user"></i> About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-book"></i> Education
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <li><a href="Education.html" class="dropdown-item">Blood Types</a></li>
+                            <li><a href="FAQ.html" class="dropdown-item">FAQ</a></li>
+                            <li><a href="Tips.html" class="dropdown-item">Tips</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><a class="nav-link" href="Get Involved.html"><i class="fas fa-hands-helping"></i>
+                        Get Involved</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html"><i class="fas fa-envelope"></i> Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link btn btn-primary dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <li><a href="" class="dropdown-item btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">Login</a></li>
+                            <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#mymodal-signup">Signup</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!----------Modals-------->
+<div class="modal fade" id="mymodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Login Here</h4>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="action">
+                    <div class="form-group">
+                        <label for="" class="form-label">Username</label>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-label">Password</label>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-primary" href="" data-bs-toggle="modal" data-bs-target="#mymodal-signup">Signup</a>
+                <a class="btn btn-primary" href="index.html">Login</a>
+                <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mymodal-signup" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="signupModalLabel">Signup Here</h4>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="#" method="POST" id="signupForm">
+                    
+                    <div class="form-group mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" required>
+                    </div>
+
+                  
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                   
+                    <div class="form-group mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                    </div>
+
+                  
+                    <div class="form-group mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="confirm-password" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                    </div>
+
+                  
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" id="terms" required>
+                        <label class="form-check-label" for="terms">I agree to the <a href="#" class="text-dark text-decoration-none">Terms and Conditions</a></label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <a href="index.html" type="submit" form="signupForm" class="btn btn-primary">Signup</a>
+                <a class="btn btn-primary" href="#mymodal" data-bs-toggle="modal" data-bs-target="#mymodal">Login</a>
+                <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-div">
+    <h1>Get Involved with BloodLink</h1>
+    <p>Join our mission to save lives by organizing blood drives, spreading awareness, and becoming a volunteer advocate for blood donation.</p>
+</div>
+
+<!-- Ways to Get Involved Section -->
+<div class="container section">
+    <h2>Ways to Get Involved</h2>
+    <div class="row">
+        <!-- Organize Blood Donation Camps -->
+        <div class="col-md-4 mb-4">
+            <div class="card p-4 text-center shadow rounded-4">
+                <img src="DALL·E 2024-09-22 04.03.20 - A vibrant scene depicting the organization of a blood donation camp. The setting includes a community hall or outdoor tent with banners that read 'Org.webp" alt="Organize Camp" class="img-fluid mb-3" style="max-height: 150px; object-fit: contain;">
+                <h4 class="text-danger">Organize Blood Donation Camps</h4>
+                <p>Be a main-div by organizing blood donation drives in your community and workplace. We’ll help you every step of the way.</p>
+            </div>
+        </div>
+        <!-- Spread Awareness -->
+        <div class="col-md-4 mb-4">
+            <div class="card p-4 text-center shadow rounded-4">
+                <img src="DALL·E 2024-09-22 04.05.09 - A dynamic scene depicting a campaign to spread awareness about the importance of blood donation. The setting shows a group of enthusiastic people hold.webp" alt="Spread Awareness" class="img-fluid mb-3" style="max-height: 150px; object-fit: contain;">
+                <h4 class="text-danger">Spread Awareness</h4>
+                <p>Help spread the word about the importance of blood donation through social media, local campaigns, or educational events.</p>
+            </div>
+        </div>
+        <!-- Volunteer Opportunities -->
+        <div class="col-md-4 mb-4">
+            <div class="card p-4 text-center shadow rounded-4">
+                <img src="DALL·E 2024-09-22 04.07.43 - A vibrant and inviting image for a 'Volunteer with Us' campaign for a blood donation management project called Blood Link. The image should feature di.webp" alt="Volunteer" class="img-fluid mb-3" style="max-height: 150px; object-fit: contain;">
+                <h4 class="text-danger">Volunteer with Us</h4>
+                <p>Become a BloodLink advocate by volunteering your time at blood drives, educational seminars, and outreach programs.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Join Us Section -->
+<div class="container section">
+    <h2>Why Get Involved?</h2>
+    <p class="text-center mb-5">Every drop counts! Your involvement can save countless lives, and make a real difference in your community. Here's why you should join our cause:</p>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card p-4 shadow rounded-4">
+                <h4 class="text-danger">Save Lives</h4>
+                <p>Blood donations are vital for hospitals to treat patients. By organizing or participating in a blood drive, you directly contribute to saving lives.</p>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card p-4 shadow rounded-4">
+                <h4 class="text-danger">Create Awareness</h4>
+                <p>Many people are unaware of the importance of regular blood donations. As a volunteer, you can educate others and build a strong network of donors.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="container-fluid text-center text-lg-start bg-dark text-light mt-5">
+    <div class="container p-3">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="#" class="navbar-brand">
+                    <img src="logo-blood-removebg-preview.webp" alt="BloodLink Logo" class="footer-logo rounded-circle">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="footer-title">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="footer-title">Services</h5>
+                <ul class="list-unstyled">
+                    <li><a href="tips.html">Tips for Donors</a></li>
+                    <li><a href="Education.html">Learn About Blood Types</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 footer-social">
+                <h5 class="footer-title">Follow Us</h5>
+                <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <hr class="hr-footer">
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 BloodLink | Designed by BloodLink Team</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

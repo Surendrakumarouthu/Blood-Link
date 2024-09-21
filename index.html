@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - BloodLink</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/kTc+hXn4FfKSh+6pW1s4nZvql8LRVmZkk57qkpXdVcUbq/tlE0zHZZq13PEpWJ1T6fmMe4xOdyVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <style>
+        @media only screen and (min-width: 720px) {
+            .container-fluid {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+
+        body {
+            background-color: #f8f9fa;
+            font-family: "Roboto", "Open Sans", "Arial", sans-serif;
+            
+        }.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.navbar .navbar-brand {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-brand:hover {
+    color: #E63946;
+}
+
+.navbar .nav-link {
+    color: black;
+    font-size: 16px;
+    margin-left: 25px;
+    padding: 10px 15px;
+    transition: background-color 0.4s ease, color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: white;
+    background-color: #0080A8;
+    border-radius: 10px;
+}
+
+.nav-link i {
+    margin-right: 4px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: #F1FAEE;
+}
+        
+        /*-----------------------------*/
+
+         
+         .carousel-item img {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease-in-out;
+        }
+        .carousel-item img:hover {
+            transform: scale(1.05);
+        }
+
+     
+        .carousel {
+            background: linear-gradient(45deg, rgba(255,0,0,0.1), rgba(255,255,255,1));
+        }
+
+        .col-md-6 h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: #d9534f; 
+            text-align: center;
+        }
+        .col-md-6 h2 {
+            font-size: 1.5rem;
+            color: #6c757d;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        
+        .become-donor {
+            background-color: #d9534f;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0px 4px 15px rgba(217, 83, 79, 0.4);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        .become-donor:hover {
+            background-color: #c9302c;
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(217, 83, 79, 0.6);
+        }
+   
+/*-------------------------*/
+
+
+
+.info-box{
+    color: #ffffff;
+    height: 250px;
+
+}
+.info-box img{
+    width: 50px;
+    height: 50px;
+   
+    background-color: #ffffff;
+}
+.info-box h3{
+    font-size: larger;
+}
+.info-box p{
+    font-size: medium;
+}
+.bottom-nav{
+    background-color: #D9534F;
+}
+.become-donor{
+    color:#F1FAEE;
+    background-color:#E63946 ;
+}
+.logo-img{
+    width:150px;
+    height: 150px;
+}
+
+  /* Footer Styles */
+  footer {
+    background-color: #1D3557;
+    color: #F1FAEE;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+footer a {
+    color: #F1FAEE;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #E63946;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-logo {
+    width: 120px;
+    height: auto;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.footer-social a:hover {
+    color: #E63946;
+}
+
+.hr-footer {
+    border: 1px solid #F1FAEE;
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo-blood-removebg-preview.webp" alt="BloodLink Logo" class="footer-logo rounded-circle"> BloodLink
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-Us.html"><i class="fas fa-user"></i> About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-book"></i> Education
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <li><a href="Education.html" class="dropdown-item">Blood Types</a></li>
+                            <li><a href="FAQ.html" class="dropdown-item">FAQ</a></li>
+                            <li><a href="Tips.html" class="dropdown-item">Tips</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><a class="nav-link" href="Get Involved.html"><i class="fas fa-hands-helping"></i>
+                        Get Involved</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html"><i class="fas fa-envelope"></i> Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link btn btn-primary dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <li><a href="" class="dropdown-item btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">Login</a></li>
+                            <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#mymodal-signup">Signup</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Login Here</h4>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="action">
+                        <div class="form-group">
+                            <label for="" class="form-label">Username</label>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="" data-bs-toggle="modal" data-bs-target="#mymodal-signup">Signup</a>
+                    <a class="btn btn-primary" href="index.html">Login</a>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mymodal-signup" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="signupModalLabel">Signup Here</h4>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="POST" id="signupForm">
+                        
+                        <div class="form-group mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" required>
+                        </div>
+    
+                      
+                        <div class="form-group mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+    
+                       
+                        <div class="form-group mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                        </div>
+    
+                      
+                        <div class="form-group mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+    
+                        <div class="form-group mb-3">
+                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                        </div>
+    
+                      
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="terms" required>
+                            <label class="form-check-label" for="terms">I agree to the <a href="#" class="text-dark text-decoration-none">Terms and Conditions</a></label>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="modal-footer">
+                    <a href="index.html" type="submit" form="signupForm" class="btn btn-primary">Signup</a>
+                    <a class="btn btn-primary" href="#mymodal" data-bs-toggle="modal" data-bs-target="#mymodal">Login</a>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container mb-5">
+    <div class="row">
+        <!-- Carousel Section -->
+        <div class="col-md-6 col-12 mb-5 mb-md-0">
+            <div id="blood-item" class="carousel slide rounded-4" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="DALL·E 2024-09-22 02.20.57 - A beautiful, symbolic image of a single blood packet connected to many people, visually representing the concept of one blood donation saving multiple.webp" alt="Blood Drive" class="d-block w-100 rounded-5" style="max-height: 600px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="DALL·E 2024-09-22 02.51.57 - A visually striking and unique image for a blood donation management web application. This design should feature a stylized, heart-shaped blood drople.webp" alt="Blood Donation" class="d-block w-100 rounded-5" style="max-height: 600px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="DALL·E 2024-09-22 02.30.55 - A visually striking image of a single blood packet with vibrant red liquid inside, connected by flowing veins or tubes to multiple people standing aro.webp" alt="Blood Donation Event" class="d-block w-100 rounded-5" style="max-height: 600px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="DALL·E 2024-09-22 02.34.16 - An artistic representation symbolizing a technology-driven blood donation project. The central focus is a futuristic digital interface with a glowing .webp" alt="Blood Grouping" class="d-block w-100 rounded-5" style="max-height: 600px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="DALL·E 2024-09-22 02.46.28 - A beautifully designed image symbolizing blood donation for a blood donation management web application. The image should feature a large, vibrant dro.webp" alt="Blood Grouping" class="d-block w-100 rounded-5" style="max-height: 600px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="DALL·E 2024-09-22 04.03.20 - A vibrant scene depicting the organization of a blood donation camp. The setting includes a community hall or outdoor tent with banners that read 'Org.webp" alt="Blood Grouping" class="d-block w-100 rounded-5" style="max-height: 600px; object-fit: cover;">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="DALL·E 2024-09-22 04.07.43 - A vibrant and inviting image for a 'Volunteer with Us' campaign for a blood donation management project called Blood Link. The image should feature di.webp" alt="Blood Grouping" class="d-block w-100 rounded-5" style="max-height: 600px; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="DALL·E 2024-09-22 04.05.09 - A dynamic scene depicting a campaign to spread awareness about the importance of blood donation. The setting shows a group of enthusiastic people hold.webp" alt="Blood Grouping" class="d-block w-100 rounded-5" style="max-height: 600px; object-fit: cover;">
+                    </div>
+                  
+                  
+                   
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#blood-item" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#blood-item" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Text and Button Section -->
+        <div class="col-md-6 col-12 d-flex align-items-center justify-content-center flex-column">
+            <h1> Welcome to BloodLink  <i class="fas fa-heartbeat"></i></h1>
+            <h2>Find Blood, Donate Blood, Save Lives</h2>
+            <div class="buttons btn-group-horizontol">
+            <a href="Donate Blood.html" class="btn become-donor rounded-4 p-3 mt-4">
+                <i class="fas fa-tint blood-icon"></i> Become a Donor
+            </a>
+            <a href="Donate Blood.html" class="btn become-donor rounded-4 p-3 ms-3 mt-4">
+                <i class="fas fa-hand-holding-heart"></i>
+
+
+ Find Donor
+            </a>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bottom-nav py-5" style="background: linear-gradient(135deg, #f06543, #f29e4c);">
+    <div class="container">
+        <div class="row justify-content-center">
+           
+            <div class="col-12 col-md-3 mb-4">
+                <div class="info-box text-center p-4 rounded-4 shadow" style="background-color: white; transition: transform 0.3s;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4633/4633193.png" alt="Donate Icon" class="img-fluid rounded-5 mb-3" style="max-height: 150px; object-fit: cover;">
+                   
+                        <h3 class="text-danger"><i class="fas fa-hand-holding-heart"></i>
+                            Donate Blood</h3>
+                  
+                    <p class="text-dark">Give the gift of life by donating blood at our nearest center.</p>
+                </div>
+            </div>
+
+           
+            <div class="col-12 col-md-3 mb-4">
+                <div class="info-box text-center p-4 rounded-4 shadow" style="background-color: white; transition: transform 0.3s;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2637/2637695.png" alt="Find Blood" class="img-fluid rounded-5 mb-3" style="max-height: 150px; object-fit: cover;">
+                    
+                        <h3 class="text-danger"><i class="fas fa-search-location"></i>
+                            Find a Donor</h3>
+                 
+                    <p class="text-dark">Locate a blood donor in your area and save lives quickly.</p>
+                </div>
+            </div>
+
+ 
+            <div class="col-12 col-md-3 mb-4">
+                <div class="info-box text-center p-4 rounded-4 shadow" style="background-color: white; transition: transform 0.3s;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/17715/17715711.png" alt="Help" class="img-fluid rounded-5 mb-3" style="max-height: 150px; object-fit: cover;">
+                    <a class="nav-link" href="Get Involved.html">
+                        <h3 class="text-danger"><i class="fas fa-tint blood-icon"></i> Get Involved</h3>
+                    </a>
+                    <p class="text-dark">Help us spread awareness by becoming an advocate for blood donation.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+                <div class="info-box text-center p-4 rounded-4 shadow" style="background-color: white; transition: transform 0.3s;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4850/4850336.png" alt="Organize Camp" class="img-fluid rounded-5 mb-3" style="max-height: 150px; object-fit: cover;">
+                  
+                        <h3 class="text-danger"><i class="fas fa-users-cog"></i>
+                            Organize a Camp</h3>
+                    
+                    <p class="text-dark">Lead a blood donation camp in your community and make a difference.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+                <div class="info-box text-center p-4 rounded-4 shadow" style="background-color: white; transition: transform 0.3s;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/10766/10766857.png" alt="Track Donations" class="img-fluid rounded-5 mb-3" style="max-height: 150px; object-fit: cover;">
+                    
+                        <h3 class="text-danger"><i class="fas fa-chart-line"></i>
+                            Track Donations</h3>
+                   
+                    <p class="text-dark">Easily track the status of your past blood donations and contributions.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+                <div class="info-box text-center p-4 rounded-4 shadow" style="background-color: white; transition: transform 0.3s;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5842/5842746.png" alt="Donation History" class="img-fluid rounded-5 mb-3" style="max-height: 150px; object-fit: cover;">
+                   
+                        <h3 class="text-danger"><i class="fas fa-history"></i>
+                            Donation History</h3>
+                 
+                    <p class="text-dark">View your personal donation history and maintain your health records.</p>
+                </div>
+            </div>
+        
+    
+            <div class="col-12 col-md-3 mb-4">
+                <div class="info-box text-center p-4 rounded-4 shadow" style="background-color: white; transition: transform 0.3s;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/15188/15188874.png" alt="Request Blood" class="img-fluid rounded-5 mb-3" style="max-height: 150px; object-fit: cover;">
+                   
+                        <h3 class="text-danger"><i class="fas fa-ambulance"></i>
+
+                            Request Blood</h3>
+                   
+                    <p class="text-dark">Urgently need blood? Send a request and get matched with donors quickly.</p>
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-3 mb-4">
+                <div class="info-box text-center p-4 rounded-4 shadow" style="background-color: white; transition: transform 0.3s;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5703/5703024.png" alt="Emergency Blood Services" class="img-fluid rounded-5 mb-3" style="max-height: 150px; object-fit: cover;">
+                    
+                        <h3 class="text-danger"><i class="fas fa-tint blood-icon"></i> Emergency Blood Services</h3>
+                    
+                    <p class="text-dark">Access emergency blood services in critical cases anytime, anywhere.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center text-lg-start bg-dark text-light mt-5">
+    <div class="container p-3">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <a href="#" class="navbar-brand">
+                    <img src="logo-blood-removebg-preview.webp" alt="BloodLink Logo" class="footer-logo rounded-circle">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="footer-title">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="footer-title">Services</h5>
+                <ul class="list-unstyled">
+                    <li><a href="tips.html">Tips for Donors</a></li>
+                    <li><a href="Education.html">Learn About Blood Types</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 footer-social">
+                <h5 class="footer-title">Follow Us</h5>
+                <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <hr class="hr-footer">
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 BloodLink | Designed by BloodLink Team</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

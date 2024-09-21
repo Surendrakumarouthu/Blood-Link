@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloodLink - Navbar and Footer</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: "Roboto", "Open Sans", "Arial", sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+        }
+
+        .navbar .navbar-brand {
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .navbar .navbar-brand:hover {
+            color: #E63946;
+        }
+
+        .navbar .nav-link {
+            color: black;
+            font-size: 16px;
+            margin-left: 25px;
+            padding: 10px 15px;
+            transition: background-color 0.4s ease, color 0.3s ease;
+        }
+
+        .navbar .nav-link:hover {
+            color: white;
+            background-color: #0080A8;
+            border-radius: 10px;
+        }
+
+        .nav-link i {
+            margin-right: 4px;
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-toggler-icon {
+            color: #F1FAEE;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1D3557;
+            color: #F1FAEE;
+            padding: 20px 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        footer a {
+            color: #F1FAEE;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #E63946;
+        }
+
+        .footer-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .footer-logo {
+            width: 120px;
+            height: auto;
+        }
+
+        .footer-social a {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .footer-social a:hover {
+            color: #E63946;
+        }
+
+        .hr-footer {
+            border: 1px solid #F1FAEE;
+            margin: 20px 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        /* Mission & Vision */
+        .mission-vision {
+            background-color: #ffffff;
+            border-radius: 30px;
+            padding: 50px 100px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-vision h2 {
+            font-weight: 700;
+            color: #1D3557;
+        }
+
+        .mission-vision p {
+            font-size: 1.125rem;
+            color: #555;
+        }
+
+        /* Team Section */
+        .team-member {
+            margin-bottom: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .team-member h5 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1D3557;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        /* Footer Media */
+        .footer-social a {
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            color: #E63946;
+            transform: translateY(-5px);
+        }
+        header {
+    background-color: #ffffff; 
+    color: #8A0A0A; 
+    padding: 20px;
+}
+
+h1 {
+    color: #FF0000; 
+    font-size: 2.5em; 
+}
+
+.mission-vision {
+    color: #8A0A0A; 
+}
+
+.text-center {
+    text-align: center;
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo-blood-removebg-preview.webp" alt="BloodLink Logo" class="footer-logo rounded-circle"> BloodLink
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-Us.html"><i class="fas fa-user"></i> About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-book"></i> Education
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <li><a href="Education.html" class="dropdown-item">Blood Types</a></li>
+                            <li><a href="FAQ.html" class="dropdown-item">FAQ</a></li>
+                            <li><a href="Tips.html" class="dropdown-item">Tips</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><a class="nav-link" href="Get Involved.html"><i class="fas fa-hands-helping"></i>
+                        Get Involved</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html"><i class="fas fa-envelope"></i> Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link btn btn-primary dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <li><a href="" class="dropdown-item btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">Login</a></li>
+                            <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#mymodal-signup">Signup</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Login Here</h4>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="action">
+                        <div class="form-group">
+                            <label for="" class="form-label">Username</label>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="" data-bs-toggle="modal" data-bs-target="#mymodal-signup">Signup</a>
+                    <a class="btn btn-primary" href="index.html">Login</a>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mymodal-signup" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="signupModalLabel">Signup Here</h4>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="POST" id="signupForm">
+                        
+                        <div class="form-group mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" required>
+                        </div>
+    
+                      
+                        <div class="form-group mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+    
+                       
+                        <div class="form-group mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                        </div>
+    
+                      
+                        <div class="form-group mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                        </div>
+    
+                        <div class="form-group mb-3">
+                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                        </div>
+    
+                      
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="terms" required>
+                            <label class="form-check-label" for="terms">I agree to the <a href="#" class="text-dark text-decoration-none">Terms and Conditions</a></label>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="modal-footer">
+                    <a href="index.html" type="submit" form="signupForm" class="btn btn-primary">Signup</a>
+                    <a class="btn btn-primary" href="#mymodal" data-bs-toggle="modal" data-bs-target="#mymodal">Login</a>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mission & Vision Section -->
+    <section id="mission-vision">
+        <div class="header">
+            <header>
+                <h1 class="text-center">About Bloodlink</h1>
+            </header>
+        </div>
+
+        <section class="mission-vision container py-5">
+            <div class="row align-items-center text-center">
+                <div class="col-md-2 text-center mb-4 mb-md-0">
+                    <img src="data:image/jpeg;base64,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" class="img-fluid" alt="BloodLink Image">
+                </div>
+
+                <div class="col-md-8">
+                    <p class="text-center"><i class="bi bi-leaf"></i> "A single pint can save three lives, a single gesture can create a million smiles." <i class="bi bi-leaf"></i></p>
+                    <h2 class="mt-4">Our Mission</h2>
+                    <p>At BloodLink, our mission is to create a seamless, accessible, and efficient platform that connects blood donors with those in urgent need.</p>
+
+                    <h2 class="mt-4">Our Vision</h2>
+                    <p>We envision a world where no one suffers due to a lack of blood. We aim to build a global network of blood donors that empowers communities.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Meet Our Team</h2>
+            <div class="row ">
+                <div class="col-md-4 text-center team-member">
+                    <img src="https://media.istockphoto.com/id/1413766112/photo/successful-mature-businessman-looking-at-camera-with-confidence.jpg?s=612x612&w=0&k=20&c=NJSugBzNuZqb7DJ8ZgLfYKb3qPr2EJMvKZ21Sj5Sfq4=" alt="Team Member 1">
+                    <h5>Routhu Surendra kumar</h5>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="col-md-4 text-center team-member">
+                    <img src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg" alt="Team Member 2">
+                    <h5>mrs.Anupama</h5>
+                    <p>Chief Medical Officer</p>
+                </div>
+                <div class="col-md-4 text-center team-member">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4YETCMoaU0GFNsp3JU1YluaNj9FZphJo1ww&s" alt="Team Member 3">
+                    <h5>Mr.Gopinath</h5>
+                    <p>Community Outreach Coordinator</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center text-lg-start bg-dark text-light mt-5">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="#" class="navbar-brand">
+                        <img src="logo-blood-removebg-preview.webp" alt="BloodLink Logo" class="footer-logo rounded-circle">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="tips.html">Tips for Donors</a></li>
+                        <li><a href="Education.html">Learn About Blood Types</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 footer-social">
+                    <h5 class="footer-title">Follow Us</h5>
+                    <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <hr class="hr-footer">
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 BloodLink | Designed by BloodLink Team</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

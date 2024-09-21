@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloodLink - Navbar and Footer</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
+    <!-- Font Awesome and Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        /* Navbar Styles */
+        .navbar {
+            background-color: #1D3557;
+            padding: 1rem 1rem;
+        }
+        .navbar .navbar-brand {
+            color: #F1FAEE;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .navbar .navbar-brand:hover {
+            color: #E63946;
+        }
+        .navbar .nav-link {
+            color: #F1FAEE;
+            font-size: 16px;
+            text-transform: uppercase;
+            
+        }
+        .navbar .nav-link:hover {
+            color: #E63946;
+        }
+        .navbar-toggler {
+            border: none;
+        }
+        .navbar-toggler-icon {
+            color: #F1FAEE;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #1D3557;
+            color: #F1FAEE;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #F1FAEE;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #E63946;
+        }
+        .footer-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .footer-logo {
+            width: 100px;
+            height: auto;
+        }
+        .footer-social a {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        .hr-footer {
+            border: 1px solid #F1FAEE;
+            margin: 20px 0;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 10px;
+        }
+        .location-details i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo-blood-removebg-preview.webp" alt="BloodLink Logo" class="footer-logo rounded-circle"> BloodLink
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-Us.html"><i class="fas fa-user"></i> About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-book"></i> Education
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <li><a href="Education.html" class="dropdown-item">Blood Types</a></li>
+                            <li><a href="FAQ.html" class="dropdown-item">FAQ</a></li>
+                            <li><a href="Tips.html" class="dropdown-item">Tips</a></li>
+                        </ul>
+                    </li>
+                    <li class="list-item"><a class="nav-link" href="Get Involved.html"><i class="fas fa-hands-helping"></i>
+                        Get Involved</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html"><i class="fas fa-envelope"></i> Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link btn btn-primary dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                            <li><a href="" class="dropdown-item btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">Login</a></li>
+                            <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#mymodal-signup">Signup</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="container-fluid text-center text-lg-start bg-dark text-light mt-5">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="#" class="navbar-brand">
+                        <img src="logo-blood-removebg-preview.webp" alt="BloodLink Logo" class="footer-logo rounded-circle">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-title">Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="tips.html">Tips for Donors</a></li>
+                        <li><a href="Education.html">Learn About Blood Types</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 footer-social">
+                    <h5 class="footer-title">Follow Us</h5>
+                    <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <hr class="hr-footer">
+    
+            <div class="footer-bottom">
+                <p>&copy; 2024 BloodLink | Designed by BloodLink Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
