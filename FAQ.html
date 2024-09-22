@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BloodLink - Navbar and Footer</title>
-    <!-- Bootstrap CSS -->
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
-    <!-- Font Awesome and Bootstrap Icons -->
+ 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
+   
     <style>
-        /* Navbar Styles */
+       
         body {
             background-color: #f8f9fa;
             font-family: "Roboto", "Open Sans", "Arial", sans-serif;
             
-        }/* Navbar */
+        }
 .navbar {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgb(255,255,255);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 1rem 2rem;
     border-radius: 10px;
     position: sticky;
     top: 0px;
-    z-index: 10;
+    z-index: 20;
 }
 
 .navbar .navbar-brand {
@@ -66,7 +65,7 @@
     color: #F1FAEE;
 }
 
-/* Footer */
+
 footer {
     background-color: #1D3557;
     color: #F1FAEE;
@@ -90,10 +89,9 @@ footer a:hover {
 }
 
 .footer-logo {
-    width: 120px;
-    height: auto;
+    width: 60px;
+    height: 60px;
 }
-
 .footer-social a {
     margin-right: 10px;
     font-size: 24px;
@@ -122,7 +120,7 @@ footer a:hover {
             <a class="navbar-brand" href="#">
                 <img src="DALL·E 2024-09-22 09.15.36 - A modern, clean, and impactful logo for a project titled 'BloodLink' with the slogan 'Find Blood, Donate Blood, Save Lives'. The design includes a red.webp" alt="BloodLink Logo" class="footer-logo rounded-circle"> BloodLink
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
                 <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -134,25 +132,29 @@ footer a:hover {
                         <a class="nav-link" href="About-Us.html"><i class="fas fa-user"></i> About Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" >
                             <i class="fas fa-book"></i> Education
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                        <ul class="dropdown-menu" >
                             <li><a href="Education.html" class="dropdown-item">Blood Types</a></li>
                             <li><a href="FAQ.html" class="dropdown-item">FAQ</a></li>
                             <li><a href="Tips.html" class="dropdown-item">Tips</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html"><i class="gallery-icon fas fa-images"></i> Gallery</a>
+                    </li>
+
                     <li class="list-item"><a class="nav-link" href="Get Involved.html"><i class="fas fa-hands-helping"></i>
                         Get Involved</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact us.html"><i class="fas fa-envelope"></i> Contact Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link btn btn-primary dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link btn btn-primary dropdown-toggle" href="#" id="educationDropdown" role="button" data-bs-toggle="dropdown" >
                             <i class="fas fa-sign-in-alt"></i> Login
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="educationDropdown">
+                        <ul class="dropdown-menu" >
                             <li><a href="" class="dropdown-item btn btn-primary" data-bs-toggle="modal" data-bs-target="#mymodal">Login</a></li>
                             <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#mymodal-signup">Signup</a></li>
                         </ul>
@@ -162,7 +164,7 @@ footer a:hover {
             </div>
         </div>
     </nav>
-<!----------Modals-------->
+
 <div class="modal fade" id="mymodal">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -189,12 +191,12 @@ footer a:hover {
         </div>
     </div>
 </div>
-<div class="modal fade" id="mymodal-signup" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+<div class="modal fade" id="mymodal-signup" >
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 id="signupModalLabel">Signup Here</h4>
-                <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button class="btn-close" data-bs-dismiss="modal" ></button>
             </div>
             <div class="modal-body">
                 <form action="#" method="POST" id="signupForm">
@@ -254,7 +256,7 @@ footer a:hover {
                         Who can donate blood?
                     </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div id="collapseOne" class="accordion-collapse collapse show"  data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
                         Most healthy adults between the ages of 18 and 65 can donate blood. You must weigh at least 50 kg (110 lbs) and meet certain health and lifestyle criteria.
                     </div>
@@ -289,7 +291,7 @@ footer a:hover {
                 </div>
             </div>
 
-            <!-- Question 4 -->
+            
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" >
@@ -373,7 +375,7 @@ footer a:hover {
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
 </body>
